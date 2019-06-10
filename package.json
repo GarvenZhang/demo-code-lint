@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "eslint-plugin-html": "^5.0.5",
     "husky": "^1.3.1",
     "lint-staged": "^8.0.4",
     "standard": "^12.0.1"
@@ -18,7 +19,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,md,css,html}": [
+    "*.{js,md,css,html,vue,jsx}": [
       "standard --fix",
       "git add"
     ]
