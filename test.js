@@ -6,4 +6,4 @@ function ii() {
 }
 const r = 4;
 let oo = 3;
-let c = 33;
+let ww = 33;
