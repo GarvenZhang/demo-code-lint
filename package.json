@@ -21,9 +21,11 @@
   },
   "lint-staged": {
     "*.{js,md,css,html}": [
-      "eslint --fix",
       "prettier --trailing-comma es5 --single-quote --write",
       "git add"
+    ],
+    "yarn.lock": [
+      "git rm --cached"
     ]
   },
   "repository": {
