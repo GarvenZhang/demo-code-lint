@@ -1,0 +1,39 @@
+{
+  "name": "demo-code-lint",
+  "version": "1.0.0",
+  "description": "代码检测demo，用于前端代码规范化",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "husky": "^2.4.0",
+    "lint-staged": "^8.2.0",
+    "prettier": "^1.18.2",
+    "stylelint": "^10.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,md,css,html}": [
+      "eslint --fix",
+      "prettier --trailing-comma es5 --single-quote --write",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GarvenZhang/demo-code-lint.git"
+  },
+  "author": "garven",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GarvenZhang/demo-code-lint/issues"
+  },
+  "homepage": "https://github.com/GarvenZhang/demo-code-lint#readme"
+}
